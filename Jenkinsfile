@@ -9,7 +9,7 @@ pipeline {
       stage(‘AWSUploadS3’) {
         steps {
           withAWS(region:'ap-south-1',credentials:'aws-static') {
-            s3Upload(pathStyleAccessEnabled:true, payloadSigningEnabled: true, file:'index.html', bucket:'udacity628')
+            s3Upload(pathStyleAccessEnabled:true, payloadSigningEnabled: true, file:'index.html', bucket:'udacity6028')
           }
         }
       }
